@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio Site</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="port.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<!-- nabar header site intro	 -->
+
+<!-- will insert navstuff here later -->
+
+<!-- page content -->
+
+<a name="#top" id="top"></a>
+<div class="background_picture"></div>
+
+<div class="jumbotron jumbotron-top">
+  <div class="page_container full bg">
+  	<!-- <div class="iconGlobe">
+  		<i class="fa fa-globe"></i>
+  	</div> -->
+  	<a name="#start" id="start"></a>
+    	<h1>Witness the Beauty</h1>
+    	<h2>of</h2>
+    	<h1>Our Planet</h1>
+    <div class="iconArrowDown">
+    	<a href="#intro">
+    		<!-- <i class="fa fa-arrow-circle-o-down"></i> -->
+    		<img class="arrow-down" src="arrow-down.png">
+    	</a>
+    </div>
+  </div>
+</div>
+
+<!-- intro about the site -->
+
+<a name="#intro" id="intro"></a>
+<div class="bgContainer1">
+	<div class="iconCompass">
+		<!-- <i class="fa fa-compass"></i> -->
+		<img class="compass_img" src="Compass.png">
+	</div>	
+	<div class="introBlock">
+		<div class="About">
+			<p>	Our planet is filled with many amazing sights and this site 
+				contains a gallery of some of my personal favorites. 
+				The site highlights many different landscapes and scenery ranging from forests to thriving metropolises. 
+				Take a glimpse of what our world has to offer below. </p>
+		</div>
+	</div>	
+</div>
+
+<!-- most favorited picture code -->
+
+<a name="#fav" id="fav"></a>
+<div class="bgContainer2">
+	<div class="most_favorited">
+		<div class="textFavorited">
+			<h4>Latest Addition</h4>
+		</div>
+	<img class="latest_img" src="https://images.unsplash.com/photo-1414170562806-9d670e90c091?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=925&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=1750" width="100%">
+	</div>
+</div>
+
+<!-- most favorited descption code -->
+
+<a name="#fav_desc" id="fav_desc"></a>
+<div class="bgContainer2">
+	<div class="latestAddHeader">
+		<div id="horizRuleFavImage">
+			<h3>White Mountains</h3>
+			<hr>
+		</div>
+		</div>
+	<div class="descBlock">
+		<div class="picDesc">
+			<p>	Mountain ranges especially those covered in snow are amongst the most appealing sites to glimpse upon. These scenic locales inspire the human imagination. This specific photo depiciting a closeup view and a shot of the horizon was taken by Ales Krivec. </p>
+		</div>
+	</div>
+	<div class="photoDemo">
+		<img class="monitor_pic" src="MonitorsUpdated.jpg">
+	</div>
+	<div class="getImage">
+		<a href="https://unsplash.com/photos/58zgsq3c63g">
+		<button type="button" class="btn btn-default btn-sm">Download Image as Wallpaper</button>
+		</a>
+	</div>
+</div>
+
+<!-- WIP sort category will need Jquery/Javascript programming -->
+
+<div class="container_grid_1" class="small_container_grid">
+		<div class="category_block">
+			<div class="desc_category">
+				<p>Image Gallery Categories</p>
+			</div>
+
+			<div class="row no-gutters filter">
+				<!-- <div class="col-lg-3">
+					<p class="filter_text">Desert</p>
+				</div> -->
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						<p class="filter_text">Ocean</p>
+					</button>
+					
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						<p class="filter_text">Mountain</p>
+					</button>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						<p class="filter_text">Forest</p>
+					</button>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						<p class="filter_text">City</p>
+					</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- end of filter/grid system code -->
+
+
+
+<!-- Image Grid System Code begins here -->
+
+<div class="container_grid_2">
+	<div class="image_block">
+		<div class="row no-gutters gallery">
+			<div class="col-lg-4 col-sm-6 col-xs-12 image1">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/r1XwWjI4PyE">
+					<img class="grid_images" src="https://images.unsplash.com/10/caroline_sada_landscape.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+			<!-- 	<div class="grid_overlay"> -->
+					<div class="grid_type">forest</div>
+					<div class="grid_title">green spring</div>
+		<!-- 		</div> -->
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image2">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/FHLaO89M3PE">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1429279684222-2c35cecbd635?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">forest</div>
+					<div class="grid_title">Kings Valley</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image3">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/4M-5WBrG5-c">
+					<img class="grid_images" src="https://images.unsplash.com/39/wdXqHcTwSTmLuKOGz92L_Landscape.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">ocean</div>
+					<div class="grid_title">Still Waters</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image4">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/2eNAQUigzI0">
+					<img class="grid_images" src="https://images.unsplash.com/reserve/kKvwBPaT9ucgomTWSQx9_switzerland-photo.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">mountain</div>
+					<div class="grid_title">Morning Glory</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image5">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/gR_zHJqbtzo">
+					<img class="grid_images" src="https://images.unsplash.com/uploads/1411419068566071cef10/7562527b?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">forest</div>
+					<div class="grid_title">Evening Fog</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image6">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/pHANr-CpbYM">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">mountain</div>
+					<div class="grid_title">Beggers Canyon</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image7">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/jqvxcyVx2YE">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1442422502730-a90f72460717?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">mountain</div>
+					<div class="grid_title">half dome</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image8">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/2MHwEybkOcw">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1419471953878-436f8f6a6689?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">ocean</div>
+					<div class="grid_title">blue paradise</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image9">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/02f3KC3zKPk">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1423589989400-cc0270157ed0?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">city</div>
+					<div class="grid_title">rush hour</div>
+				</a>
+				</div>
+			</div>
+
+			<!-- ////another group of 9 /// -->
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 image1">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/3Ku0e3k9qXU">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1444041401850-6d9f537550c4?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+			<!-- 	<div class="grid_overlay"> -->
+					<div class="grid_type">forest</div>
+					<div class="grid_title">final sunset</div>
+		<!-- 		</div> -->
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image2">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/XJfHMPJ0e-g">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1446038202205-1c96430dbdab?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">ocean</div>
+					<div class="grid_title">shoreline</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image3">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/IoGbgr8q-k8">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1445592460430-2c4c1b620e6a?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">city</div>
+					<div class="grid_title">skyscrapers</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image4">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/5zM-ueZsgzI">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1431066444736-9e4962596d13?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">ocean</div>
+					<div class="grid_title">crystal grove</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image5">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/EBbP0Wrbmqs">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1446729444801-31245ddba81a?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">forest</div>
+					<div class="grid_title">dark forest</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image6">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/XWKNM4TsWAQ">
+					<img class="grid_images" src="https://images.unsplash.com/uploads/1412408486325945f081a/09b0f9e1?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">city</div>
+					<div class="grid_title">downtown</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image7">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/pmX9BkDDr_A">
+					<img class="grid_images" src="https://images.unsplash.com/reserve/B6PfiQ8QoSzmsZYOCkSB__DSC0530-1.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">mountain</div>
+					<div class="grid_title">yellow valley</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image8">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/i6nGVkbbUT4">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1443128759403-3dac98b20779?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">forest</div>
+					<div class="grid_title">sight unseen</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image9">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/b7g3wVqr1gU">
+					<img class="grid_images" src="https://images.unsplash.com/27/landscape.JPG?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">mountain</div>
+					<div class="grid_title">breaking dawn</div>
+				</a>
+				</div>
+			</div>
+
+			<!-- //// another group of 9 //// -->
+
+						<div class="col-lg-4 col-sm-6 col-xs-12 image1">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/ePelyMHwUok">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1432294770610-ae36b8a2ff81?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+			<!-- 	<div class="grid_overlay"> -->
+					<div class="grid_type">forest</div>
+					<div class="grid_title">green fog</div>
+		<!-- 		</div> -->
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image2">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/ArtVJ-217Cw">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1446483050676-bd2fdf3ac2d6?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">forest</div>
+					<div class="grid_title">woodland slopes</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image3">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/RokFUDqlTIo">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">city</div>
+					<div class="grid_title">concrete valley</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image4">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/2p1HOcpi14U">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1414115880398-afebc3d95efc?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">city</div>
+					<div class="grid_title">horizons</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image5">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/9wg5jCEPBsw">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">mountain</div>
+					<div class="grid_title">rockslide</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image6">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/o-zOatT4kQw">
+					<img class="grid_images" src="https://images.unsplash.com/38/L2NfDz5SOm7Gbf755qpw_DSCF0490.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">mountain</div>
+					<div class="grid_title">sunray</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image7">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/6WLGMivmV00">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1429152937938-07b5f2828cdd?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">ocean</div>
+					<div class="grid_title">warm beach</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image8">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/fTobSn6psu0">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1425563805830-b82b85e0fa2e?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">ocean</div>
+					<div class="grid_title">turquoise sky</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12 image9">
+				<div class = "thumbnail">
+				<a href="https://unsplash.com/photos/WplPUOmyVdA">
+					<img class="grid_images" src="https://images.unsplash.com/photo-1433952206545-f507af9b26fd?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+
+					<div class="grid_type">city</div>
+					<div class="grid_title">old village</div>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Image grid system code ends here -->
+
+
+<!-- Saved for Code to expand size of screen/elimate the background if needed -->
+
+
+
+<!-- Bottom of the page background and links -->
+
+<a name="#end" id="end"></a>
+<div class="bgContainer3">
+<!-- 	<div class="jumbotron jumbotron-bot"> -->
+<!-- 	  <div class="page_container_2 full bg"> -->
+	  	<div class="whitebg_fill"></div>
+	  	<!-- <div class="iconGlobe">
+	  		<i class="fa fa-globe"></i>
+	  	</div> -->
+	  	<div class="end_page_container header">
+	  		<div class="iconArrowUp">
+    			<a href="#start">
+    				<img class="arrow-up" src="arrow-up.png">
+    			</a>
+    		</div>
+	    		<h1>An Image gallery <span>of our</span> World</h1>
+	    </div>
+	    <div class="end_page_container icons small_screen">
+	    	<div class="row end_rowpage_icons">
+	    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colbotpage_icons">
+	    		<a class="end_page_links" href="mailto:matt.bednarek@comcast.net">
+	    			<i class="fa fa-envelope"></i>
+	    		</div>
+	    		</a>
+	    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colbotpage_icons">
+	    		<a class="end_page_links" href="https://unsplash.com/">
+	    			<i class="fa fa-instagram"></i>
+	    		</div>
+	    		</a>
+	    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colbotpage_icons">
+	    		<a class="end_page_links" href="https://www.reddit.com/domain/unsplash.com/">
+	    			<i class="fa fa-reddit-alien"></i>
+	    		</div>
+	    	    </a>
+	    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colbotpage_icons">
+	    		<a class="end_page_links" href="https://www.youtube.com/watch?v=SM8c7bqsOBI">
+	    			<i class="fa fa-youtube"></i>
+	    		</div>
+	    		</a>
+	    	</div>
+	    </div>
+
+	   <div class="end_page_container legal">
+	   		<div class="legal_disclaimer">
+	   			<p>Use of content on Unsplash is permitted under creative commons zero.</p>
+	   		</div>
+
+	   </div>
+</div>
+
+<!-- end of code for bottom page background and links -->
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
