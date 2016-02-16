@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio Site</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="landpage.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,300' rel='stylesheet' type='text/css'>
+	
+	</head>
+<body>
+
+<div id="background">
+  <img src="https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=925&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=1750" alt="">
+</div>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="portfolio.html"><i class="fa fa-globe"></i> Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="about" href="#intro" data-scroll>About</a></li>
+        <li><a id="discover" href="https://unsplash.com">Discover More</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- jquery and javascript links -->
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- div container classes landing page text -->
+
+  <div class="container1">
+  	<div class="row">
+  		<div class="col-lg-12">
+  			<div id="lPageContent">
+		    	<h1 class="textExplore">Explore
+		    	<span id="textThe"><em>the</em></span><span id="textPlanet"> Planet </span><span id="textEarth"> Earth</span></h1>
+		    </div>
+		</div>
+    </div>
+   </div>
+
+<div class="container2">
+  	<div class="row">
+  		<div class="col-lg-12">
+  			<div id="textUnderHeader">
+		   		<p id="pageDescription"><em>View a gallery of images taken from around the world</em></p>
+		    </div>
+		</div>
+    </div>
+</div>
+
+  <div class = "container3">
+  	<div class="row">
+  		<div class="col-lg-12">
+  			<div id="horizRule">
+  				<hr>
+  				<h4>Start Exploring</h4>
+		    	<a id="pageEnter" href="portfolio.html"><span class="fa fa-arrow-down"></span></a>
+		    	<!-- <a id="wallpaperSite" href="https://www.unsplash.com"><button type="button" class="btn btn-secondary btn-lg">Discover More</button> -->
+		    </div>
+		</div>
+	</div>
+  </div>
+
+
+<!-- <div class="container4">
+  	<div class="row">
+  		<div class="col-lg-12">
+  			<div id="buttonSource">
+		   		<a id="wallpaperSite" href="https://www.unsplash.com"><button type="button" class="btn btn-secondary btn-lg">Discover More</button>
+		    </div>
+		</div>
+    </div>
+</div> -->
+
+
+</body>
+</html>
