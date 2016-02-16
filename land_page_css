@@ -1,0 +1,153 @@
+/*html elements*/
+
+html{
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+
+#background {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#background img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+hr{
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	margin-top: 30px;
+	width: 50%;
+}
+
+h4{
+	text-align: center;
+	padding-left: 100px;
+	font-family: Alegreya Sans SC, Helvetica, Arial;
+	font-size: 1.5em;
+}
+
+
+/*classes and id's*/
+
+nav.navbar-default{
+	background: rgba(215,215,215, .2);
+	background-size: cover;
+	border: none;
+	border-radius: 0px;
+}
+
+.navbar-default .navbar-brand{
+	font-weight: 400;
+	font-family: Varela Round, Helvetica, Arial;
+	font-size: 20px;
+	color: rgb(64,64,64);
+	padding-top: 8px;
+}
+
+a#about, #discover{
+	font-weight: 400;
+	font-family: Varela Round, Helvetica, Arial;
+	font-size: 15px;
+	color: rgb(64,64,64);
+}
+
+i.fa-globe{
+	font-size: 30px;
+	text-shadow: 1px 1px 1px;
+	color: rgb(64,64,64);
+}
+
+h1.textExplore{
+	font-family: Alegreya Sans SC, Helvetica, Arial;
+	font-weight: 300;
+	padding-bottom: 1%; 
+	letter-spacing: 8px;
+	font-size: 6.0em;
+}
+
+span#textThe{
+	font-weight: lighter;
+	font-family: Varela Round, Helvetica, Arial;
+	font-size: 0.2em;
+}
+
+span#textPlanet{
+	font-family: Alegreya Sans SC, Helvetica, Arial;
+	font-weight: 300;
+	letter-spacing: 3px;
+	font-size: 0.6em;
+
+}
+
+span#textEarth{
+	font-family: Varela Round, Helvetica, Arial;
+	font-size: 0.75em;
+	font-color: rgb(64,64,64);
+	font-weight: bold;
+}
+
+div#lPageContent{
+	margin-top: 15%;
+	margin-right: 15%;
+	text-align: center;
+}
+
+p#pageDescription{
+	padding-top: 5px;
+	margin-left: 35%;
+	font-size: 25px;
+	font-weight: 300;
+	font-family: Alegreya Sans SC, Helvetica, Arial;
+}
+
+div#horizRule{
+ 	padding-top: 2%;
+}
+
+
+span.fa-arrow-down{
+	margin-left: 50%;
+	font-size: 500%;
+	color: rgb(120,120,120);
+	background: rgba(215,215,215, .2);
+	background-size: cover;
+	border: 1px solid rgba(200, 200, 200, .2);
+	-webkit-border-radius: 1em;
+	position: absolute;
+	z-index: 1;
+}
+
+span.fa-arrow-down:hover{
+	text-shadow: 3px 3px 3px rgba(64,64,64,64.5);
+	color: rgb(60,60,60);
+	padding-top: 3%;
+	-webkit-transition: all 0.55s ease-out;
+	position: absolute;
+	z-index: 1;
+}
+
+a#about:hover, #discover:hover{
+	color: rgb(120,120,120);
+}
+
+/*button.btn{
+	display: block;
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 920px;
+}*/
+
