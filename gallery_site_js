@@ -1,0 +1,81 @@
+//Call functions
+galleryToggleDisplay();
+scrollToElement();
+arrowAnimationOnHover();
+
+
+function galleryToggleDisplay(){
+	//Sort categories by type when clicked
+	$(".forestbtn").on("click", function(){
+		//hide display of category type when clicked
+		$(".forest").fadeToggle(500);
+		//toggle border when clicked
+			$(".forestbtn").toggleClass("BtnScreenFade");
+	});
+	$(".oceanbtn").on("click", function(){
+		$(".ocean").fadeToggle(500);
+			$(".oceanbtn").toggleClass("BtnScreenFade");
+	});
+	$(".mountainbtn").on("click", function(){
+		$(".mountain").fadeToggle(500);
+			$(".mountainbtn").toggleClass("BtnScreenFade");
+	});
+	$(".citybtn").on("click", function(){
+		$(".city").fadeToggle(500);
+			$(".citybtn").toggleClass("BtnScreenFade");
+	});
+
+}
+
+
+function scrollToElement(){
+	//scroll to specific element on page when arrow is clicked
+	$(".arrow-down").on("click", function(){
+		//offset finds location
+		var introPos = $("#intro").offset();
+		//assign property, speed, and easing
+		$("body").animate({scrollTop: introPos.top}, 600, "swing" );
+
+	});
+
+	$(".arrow-up").on("click", function(){
+		var startPagePos = $("#top").offset();
+		$("body").animate({scrollTop: startPagePos.top}, 800, "swing" );
+
+	});
+}
+
+function arrowAnimationOnHover(){
+	//animate transition on hover
+	$(".arrow-down").hover(function(){
+		//move down mouseover
+		$(this).stop().animate({top: 15}, 400, "swing");
+	}, function(){
+		//back to default mouseout
+		$(this).stop().animate({top: 0}, 400, "swing");
+	});
+		$(".arrow-up").hover(function(){
+		$(this).stop().animate({bottom: 15}, 400, "swing");
+	}, function(){
+		$(this).stop().animate({bottom: 0}, 400, "swing");
+	});
+}
+
+
+$(document).ready(function(){
+		var text = $(".cycleText");
+		var textIndex = -1;
+
+	function showNextText(){
+		++textIndex;
+		if(textIndex == text.length -1){
+			text.eq(textIndex).fadeIn(2000);
+			return;
+		}
+		text.eq(textIndex)
+				.fadeIn(2000)
+				.delay(2000)
+				.fadeOut(2000, showNextText);
+	}
+		showNextText();
+});
