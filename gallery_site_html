@@ -6,15 +6,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="port.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src ="modernizr.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,300' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-
-<!-- nabar header site intro	 -->
-
-<!-- will insert navstuff here later -->
 
 <!-- page content -->
 
@@ -23,17 +21,16 @@
 
 <div class="jumbotron jumbotron-top">
   <div class="page_container full bg">
-  	<!-- <div class="iconGlobe">
-  		<i class="fa fa-globe"></i>
-  	</div> -->
-  	<a name="#start" id="start"></a>
     	<h1>Witness the Beauty</h1>
     	<h2>of</h2>
-    	<h1>Our Planet</h1>
+    	<h1>Our <span class = "cycleText">Oceans</span>
+    			<span class = "cycleText">Cities</span>
+    			<span class = "cycleText">Mountains</span>
+    			<span class = "cycleText">Forests</span>
+    			<span class = "cycleText">Planet</span>
+    	</h1>
     <div class="iconArrowDown">
-    	<a href="#intro">
-    		<!-- <i class="fa fa-arrow-circle-o-down"></i> -->
-    		<img class="arrow-down" src="arrow-down.png">
+    		<img class="arrow-down" src="arrow-down-modi.png">
     	</a>
     </div>
   </div>
@@ -89,7 +86,7 @@
 	</div>
 	<div class="getImage">
 		<a href="https://unsplash.com/photos/58zgsq3c63g">
-		<button type="button" class="btn btn-default btn-sm">Download Image as Wallpaper</button>
+		<button type="button" class="btn btn-default btn-sm btn-download">Download Image as Wallpaper</button>
 		</a>
 	</div>
 </div>
@@ -103,27 +100,25 @@
 			</div>
 
 			<div class="row no-gutters filter">
-				<!-- <div class="col-lg-3">
-					<p class="filter_text">Desert</p>
-				</div> -->
-				<div class="col-lg-3 col-md-3 col-sm-3">
-					<button type="button" class="btn btn-primary btn-lg btn-block">
+				<div class="col-lg-3 col-md-3 col-sm-3 borderTopOcean">
+					<button type="button" class="filterShow oceanbtn">
 						<p class="filter_text">Ocean</p>
 					</button>
 					
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3">
-					<button type="button" class="btn btn-primary btn-lg btn-block">
+				<div class="col-lg-3 col-md-3 col-sm-3 borderTopMountain">
+					>
+						<button type="button" class="filterShow mountainbtn">
 						<p class="filter_text">Mountain</p>
 					</button>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3">
-					<button type="button" class="btn btn-primary btn-lg btn-block">
+				<div class="col-lg-3 col-md-3 col-sm-3 borderTopForest">
+						<button type="button"  class="filterShow forestbtn">
 						<p class="filter_text">Forest</p>
 					</button>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3">
-					<button type="button" class="btn btn-primary btn-lg btn-block">
+				<div class="col-lg-3 col-md-3 col-sm-3 borderTopCity">
+						<button type="button" class="filterShow citybtn">
 						<p class="filter_text">City</p>
 					</button>
 				</div>
@@ -141,282 +136,306 @@
 <div class="container_grid_2">
 	<div class="image_block">
 		<div class="row no-gutters gallery">
-			<div class="col-lg-4 col-sm-6 col-xs-12 image1">
-				<div class = "thumbnail">
-				<a href="https://unsplash.com/photos/r1XwWjI4PyE">
-					<img class="grid_images" src="https://images.unsplash.com/10/caroline_sada_landscape.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-			<!-- 	<div class="grid_overlay"> -->
-					<div class="grid_type">forest</div>
-					<div class="grid_title">green spring</div>
-		<!-- 		</div> -->
-				</a>
+			<div class="col-lg-4 col-sm-6 col-xs-12 forest">
+				<div class = "thumbnail img1">
+						<a href="https://unsplash.com/photos/r1XwWjI4PyE">
+						<img class="grid_images" src="https://images.unsplash.com/10/caroline_sada_landscape.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
+					<div class="vertical-child gridOverlay">
+						<div class="grid_type img1">forest</div>
+						<div class="grid_title img1">Green Spring</div>
+					</div>	
+						</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image2">
-				<div class = "thumbnail">
+			<div class="col-lg-4 col-sm-6 col-xs-12 forest">
+				<div class = "thumbnail img2">
 				<a href="https://unsplash.com/photos/FHLaO89M3PE">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1429279684222-2c35cecbd635?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">forest</div>
-					<div class="grid_title">Kings Valley</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img2">forest</div>
+					<div class="grid_title img2">Kings Valley</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image3">
-				<div class = "thumbnail">
+			<div class="col-lg-4 col-sm-6 col-xs-12 ocean">
+				<div class = "thumbnail img3">
 				<a href="https://unsplash.com/photos/4M-5WBrG5-c">
 					<img class="grid_images" src="https://images.unsplash.com/39/wdXqHcTwSTmLuKOGz92L_Landscape.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">ocean</div>
-					<div class="grid_title">Still Waters</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img3">ocean</div>
+					<div class="grid_title img3">Still Waters</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image4">
-				<div class = "thumbnail">
+			<div class="col-lg-4 col-sm-6 col-xs-12 mountain">
+				<div class = "thumbnail img4">
 				<a href="https://unsplash.com/photos/2eNAQUigzI0">
 					<img class="grid_images" src="https://images.unsplash.com/reserve/kKvwBPaT9ucgomTWSQx9_switzerland-photo.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">mountain</div>
-					<div class="grid_title">Morning Glory</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img4">mountain</div>
+					<div class="grid_title img4">Morning Glory</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image5">
+			<div class="col-lg-4 col-sm-6 col-xs-12 forest">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/gR_zHJqbtzo">
 					<img class="grid_images" src="https://images.unsplash.com/uploads/1411419068566071cef10/7562527b?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">forest</div>
-					<div class="grid_title">Evening Fog</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img5">forest</div>
+					<div class="grid_title img5">Evening Fog</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image6">
+			<div class="col-lg-4 col-sm-6 col-xs-12 mountain">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/pHANr-CpbYM">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">mountain</div>
-					<div class="grid_title">Beggers Canyon</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img6">mountain</div>
+					<div class="grid_title img6">Beggers Canyon</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image7">
+			<div class="col-lg-4 col-sm-6 col-xs-12 mountain">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/jqvxcyVx2YE">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1442422502730-a90f72460717?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">mountain</div>
-					<div class="grid_title">half dome</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img7">mountain</div>
+					<div class="grid_title img7">half dome</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image8">
+			<div class="col-lg-4 col-sm-6 col-xs-12 ocean">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/2MHwEybkOcw">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1419471953878-436f8f6a6689?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">ocean</div>
-					<div class="grid_title">blue paradise</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img8">ocean</div>
+					<div class="grid_title img8">blue paradise</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image9">
+			<div class="col-lg-4 col-sm-6 col-xs-12 city">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/02f3KC3zKPk">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1423589989400-cc0270157ed0?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">city</div>
-					<div class="grid_title">rush hour</div>
+				<div class="vertical-child gridOverlay">					
+					<div class="grid_type img9">city</div>
+					<div class="grid_title img9">rush hour</div>
+				</div>
 				</a>
 				</div>
 			</div>
 
 			<!-- ////another group of 9 /// -->
 
-			<div class="col-lg-4 col-sm-6 col-xs-12 image1">
+			<div class="col-lg-4 col-sm-6 col-xs-12 forest">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/3Ku0e3k9qXU">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1444041401850-6d9f537550c4?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-			<!-- 	<div class="grid_overlay"> -->
-					<div class="grid_type">forest</div>
-					<div class="grid_title">final sunset</div>
-		<!-- 		</div> -->
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img10">forest</div>
+					<div class="grid_title img10">final sunset</div>
+				</div>	
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image2">
+			<div class="col-lg-4 col-sm-6 col-xs-12 ocean">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/XJfHMPJ0e-g">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1446038202205-1c96430dbdab?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">ocean</div>
-					<div class="grid_title">shoreline</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img11">ocean</div>
+					<div class="grid_title img11">shoreline</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image3">
+			<div class="col-lg-4 col-sm-6 col-xs-12 city">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/IoGbgr8q-k8">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1445592460430-2c4c1b620e6a?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">city</div>
-					<div class="grid_title">skyscrapers</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img12">city</div>
+					<div class="grid_title img12">skyscrapers</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image4">
+			<div class="col-lg-4 col-sm-6 col-xs-12 ocean">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/5zM-ueZsgzI">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1431066444736-9e4962596d13?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">ocean</div>
-					<div class="grid_title">crystal grove</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img13">ocean</div>
+					<div class="grid_title img13">crystal grove</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image5">
+			<div class="col-lg-4 col-sm-6 col-xs-12 forest">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/EBbP0Wrbmqs">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1446729444801-31245ddba81a?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">forest</div>
-					<div class="grid_title">dark forest</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img14">forest</div>
+					<div class="grid_title img14">dark forest</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image6">
+			<div class="col-lg-4 col-sm-6 col-xs-12 city">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/XWKNM4TsWAQ">
 					<img class="grid_images" src="https://images.unsplash.com/uploads/1412408486325945f081a/09b0f9e1?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">city</div>
-					<div class="grid_title">downtown</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img15">city</div>
+					<div class="grid_title img15">downtown</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image7">
+			<div class="col-lg-4 col-sm-6 col-xs-12 mountain">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/pmX9BkDDr_A">
 					<img class="grid_images" src="https://images.unsplash.com/reserve/B6PfiQ8QoSzmsZYOCkSB__DSC0530-1.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">mountain</div>
-					<div class="grid_title">yellow valley</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img16">mountain</div>
+					<div class="grid_title img16">yellow valley</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image8">
+			<div class="col-lg-4 col-sm-6 col-xs-12 forest">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/i6nGVkbbUT4">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1443128759403-3dac98b20779?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">forest</div>
-					<div class="grid_title">sight unseen</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img17">forest</div>
+					<div class="grid_title img17">sight unseen</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image9">
+			<div class="col-lg-4 col-sm-6 col-xs-12 mountain">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/b7g3wVqr1gU">
 					<img class="grid_images" src="https://images.unsplash.com/27/landscape.JPG?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">mountain</div>
-					<div class="grid_title">breaking dawn</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img18">mountain</div>
+					<div class="grid_title img18">breaking dawn</div>
+				</div>
 				</a>
 				</div>
 			</div>
 
 			<!-- //// another group of 9 //// -->
 
-						<div class="col-lg-4 col-sm-6 col-xs-12 image1">
+						<div class="col-lg-4 col-sm-6 col-xs-12 forest">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/ePelyMHwUok">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1432294770610-ae36b8a2ff81?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-			<!-- 	<div class="grid_overlay"> -->
-					<div class="grid_type">forest</div>
-					<div class="grid_title">green fog</div>
-		<!-- 		</div> -->
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img19">forest</div>
+					<div class="grid_title img19">green fog</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image2">
+			<div class="col-lg-4 col-sm-6 col-xs-12 forest">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/ArtVJ-217Cw">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1446483050676-bd2fdf3ac2d6?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">forest</div>
-					<div class="grid_title">woodland slopes</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img20">forest</div>
+					<div class="grid_title img20">woodland slopes</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image3">
+			<div class="col-lg-4 col-sm-6 col-xs-12 city">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/RokFUDqlTIo">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">city</div>
-					<div class="grid_title">concrete valley</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img21">city</div>
+					<div class="grid_title img21">concrete valley</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image4">
+			<div class="col-lg-4 col-sm-6 col-xs-12 city">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/2p1HOcpi14U">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1414115880398-afebc3d95efc?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">city</div>
-					<div class="grid_title">horizons</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img22">city</div>
+					<div class="grid_title img22">horizons</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image5">
+			<div class="col-lg-4 col-sm-6 col-xs-12 mountain">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/9wg5jCEPBsw">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">mountain</div>
-					<div class="grid_title">rockslide</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img23">mountain</div>
+					<div class="grid_title img23">rockslide</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image6">
+			<div class="col-lg-4 col-sm-6 col-xs-12 mountain">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/o-zOatT4kQw">
 					<img class="grid_images" src="https://images.unsplash.com/38/L2NfDz5SOm7Gbf755qpw_DSCF0490.jpg?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">mountain</div>
-					<div class="grid_title">sunray</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img24">mountain</div>
+					<div class="grid_title img24">sunray</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image7">
+			<div class="col-lg-4 col-sm-6 col-xs-12 ocean">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/6WLGMivmV00">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1429152937938-07b5f2828cdd?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">ocean</div>
-					<div class="grid_title">warm beach</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img25">ocean</div>
+					<div class="grid_title img25">warm beach</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image8">
+			<div class="col-lg-4 col-sm-6 col-xs-12 ocean">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/fTobSn6psu0">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1425563805830-b82b85e0fa2e?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">ocean</div>
-					<div class="grid_title">turquoise sky</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img26">ocean</div>
+					<div class="grid_title img26">turquoise sky</div>
+				</div>
 				</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6 col-xs-12 image9">
+			<div class="col-lg-4 col-sm-6 col-xs-12 city">
 				<div class = "thumbnail">
 				<a href="https://unsplash.com/photos/WplPUOmyVdA">
 					<img class="grid_images" src="https://images.unsplash.com/photo-1433952206545-f507af9b26fd?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=875">
-
-					<div class="grid_type">city</div>
-					<div class="grid_title">old village</div>
+				<div class="vertical-child gridOverlay">
+					<div class="grid_type img27">city</div>
+					<div class="grid_title img27">old village</div>
+				</div>
 				</a>
 				</div>
 			</div>
@@ -428,27 +447,17 @@
 <!-- Image grid system code ends here -->
 
 
-<!-- Saved for Code to expand size of screen/elimate the background if needed -->
-
-
-
 <!-- Bottom of the page background and links -->
 
 <a name="#end" id="end"></a>
 <div class="bgContainer3">
-<!-- 	<div class="jumbotron jumbotron-bot"> -->
-<!-- 	  <div class="page_container_2 full bg"> -->
 	  	<div class="whitebg_fill"></div>
-	  	<!-- <div class="iconGlobe">
-	  		<i class="fa fa-globe"></i>
-	  	</div> -->
 	  	<div class="end_page_container header">
 	  		<div class="iconArrowUp">
-    			<a href="#start">
-    				<img class="arrow-up" src="arrow-up.png">
+    				<img class="arrow-up" src="arrow-up-modi.png">
     			</a>
     		</div>
-	    		<h1>An Image gallery <span>of our</span> World</h1>
+	    		<h1>An Image gallery <span class ="endPgHeader">of our</span> World</h1>
 	    </div>
 	    <div class="end_page_container icons small_screen">
 	    	<div class="row end_rowpage_icons">
@@ -485,8 +494,6 @@
 
 <!-- end of code for bottom page background and links -->
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="port.js"></script>
 </body>
 </html>
