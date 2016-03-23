@@ -12,81 +12,11 @@
     overflow: hidden;
 }
 
-/*//////////////code for image caption at various screen sizes//////////////////*/
-
-/*div.grid_desc{
-  bottom: 0px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}*/
-
- div.grid_type {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 0.7em;
-    text-transform: uppercase;
-    font-family: Varela Round, Helvetica, Arial;
-    letter-spacing: .5em;
-    color: white;
-    transition: opacity .25s ease;
-    opacity: 0;
-  }
-
-
-  div.grid_title{
-    width: 100%;
-    -webkit-transform: translateY(-50%);
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    padding-bottom: 120px;
-    padding-top: 120px;
-    font-size: 1.0em;
-    text-transform: uppercase;
-    font-family: Varela Round, Helvetica, Arial;
-    letter-spacing: .5em;
-    color: white;
-    transition: opacity .25s ease;
-    opacity: 0;
-  }
-
-@media only screen and (max-width: 1200px){
-  div.grid_type{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    padding-top: 20px;
-    font-size: 0.7em;
-    text-transform: uppercase;
-    font-family: Varela Round, Helvetica, Arial;
-    letter-spacing: .5em;
-    color: white;
-    opacity: 1;
-  }
-
-  div.grid_title{
-    width: 100%;
-    -webkit-transform: translateY(-50%);
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    font-size: 1.0em;
-    text-transform: uppercase;
-    font-family: Varela Round, Helvetica, Arial;
-    letter-spacing: .5em;
-    color: white;
-    opacity: 1;
-  }
-
+span.cycleText{
+  display: none;
+  color: #F5F5F5;
 }
 
-/*////////////// end of code for image caption at various screen sizes//////////////////*/
 
 .bgContainer1{
 	  background-color: white;
@@ -99,9 +29,6 @@
 
 .bgContainer2{
 	  background-color: white;
-/*    max-height: 600px;
-    min-height: 200px;*/
- /*   width: 100%;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,8 +51,8 @@
 @media only screen and (max-width: 767px){
 
   .container_grid_1{
-    padding-bottom: 30px;
-    height: 395px;
+    padding-bottom: 45px;
+    height: 410px;
   }
 
   div.category_block{
@@ -135,7 +62,6 @@
   img.grid_images{
     width: 630px;
     max-width: 100%;
-    /*min-height: 117px;*/
   }
 
   div.bgContainer1{
@@ -153,28 +79,20 @@ div.row.no-gutters.filter > [class*=" col-"] {
 
   }
 
-  /*p.filter_text{
-    background-color: gray;
-    border: 1px solid white;
-    padding: 18px;
-  }*/
-
-  button.btn-primary{
-  color: black;
-  background-color: rgb(240,240,240);
-  border-color: rgb(240,240,240);
-  border-top: none;
-  margin-bottom: 3px;
-  margin-top: 3px;
-  border-radius: 0px;
+button.filterShow{
+   color: black;
+   border: none;
+   width: 100%;
+   padding: 10px;
+   margin: 0;
+   height: 50px;
+   border: 2px solid white;
+   background-color: rgb(227,227,227);
+   outline: none;
+   box-shadow: none;
+   transition: all 0.5s ease;
 }
 
-button.btn:hover, button.btn:visited, button.btn:active, button.btn:link, button.btn:focus{
-  color: rgb(200,200,200) !important;
-  background-color: rgb(247,247,247) !important;
-  border-color: rgb(247,247,247) !important;
-  outline: none !important;
-}
 
   div.About p{
     font-size: 1.1em;
@@ -184,8 +102,91 @@ div.end_page_container h1{
   font-size: 1.3em;
   }
 
+.BtnScreenFade{
+  border: none;
+  color: rgb(200,200,200) !important;
+  background-color: rgb(247,247,247) !important;
+  border-color: rgb(247,247,247) !important;
+  outline: none !important;
+}
+
+}
+
+.vertical-child{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.gridOverlay{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+button.btn-download{
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 1200px){
+  .gridOverlay{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  } 
+  .gridOverlay:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+  div.grid_type{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    padding-top: 20px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-family: Varela Round, Helvetica, Arial;
+    letter-spacing: .5em;
+    color: white;
+    opacity: 1;
+  }
+
+  div.grid_title{
+     width: 100%;
+    -webkit-transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-family: Varela Round, Helvetica, Arial;
+    letter-spacing: .5em;
+    color: white;
+    opacity: 1;
+  }
+
+.grid_images:hover ~ .grid_title{
+  opacity: 0.5;
+}
+.grid_images:hover ~ .grid_type{
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px){
 
 
+  .BtnScreenFade{
+    border: none;
+    color: rgb(200,200,200) !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    outline: none !important;
+  }
 }
 
 /*code for images and icons*/
@@ -221,10 +222,8 @@ img.compass_img{
 
 
 .arrow-down{
-	/*font-size: 75px;
-	text-shadow: 1px 1px 1px;
-	color: rgb(64,64,64);*/
 	padding-top: 70px;
+  position: relative;
 }
 
 .arrow-up{
@@ -233,6 +232,7 @@ img.compass_img{
   color: rgb(64,64,64);
   padding-top: 10px;
   padding-bottom: 5px;
+  position: relative;
 }
 
 /*///////////////////////////////////////////////////////////
@@ -245,46 +245,28 @@ filter list code
   margin: 0;
 }
 
-/*.filter_text{
-  margin: 0;
-  width: 100%;
-  height: 50px;
-  padding: 10px;
+.filter_text{
   text-align: center;
+  margin: 0;
   font-size: 0.7em;
   text-transform: uppercase;
   font-family: Varela Round, Helvetica, Arial;
   letter-spacing: .5em;
-}*/
-
-.filter_text{
-  text-align: center;
-  margin: 0;
-  font-size: 0.5em;
-  text-transform: uppercase;
-  font-family: Varela Round, Helvetica, Arial;
-  letter-spacing: .5em;
 }
 
-.btn-block{
-  margin: 0;
-  height: 50px;
-  padding: 10px;
-}
+.filterShow{
+   color: black;
+   border: none;
+   border-top: 5px solid rgb(240,240,240);
+   padding: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+   height: 75px;
+   background-color: transparent;
+   outline: none;
+   box-shadow: none;
+   transition: all 0.5s ease;
 
-.btn-primary:hover, .btn-primary:visited, .btn-primary:active, .btn-primary:link, .btn-primary:focus{
-  color: black !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
-  outline: none !important;
-}
-
-.btn-primary{
-  color: black;
-  background-color: white;
-  border-color: white;
-  border-top: 5px solid rgb(240,240,240);
-  border-radius: 0px;
 }
 
 a.end_page_links:visited, a.end_page_links:focus, a.end_page_links:active, a.end_page_links:link{
@@ -299,15 +281,6 @@ a.end_page_links:visited, a.end_page_links:focus, a.end_page_links:active, a.end
   width: 100%;
   padding-top: 125px;
 }
-
-
-/*.filter_image_section{
-  background-color: white;
-  width: 100%;
-  padding-top: 125px;
-  display: block;
-  height: 255px;
-}*/
 
 .desc_category{
   text-align: center;
@@ -335,10 +308,12 @@ a.end_page_links:visited, a.end_page_links:focus, a.end_page_links:active, a.end
 .row.no-gutters.filter > [class*=" col-"] {
    padding-right: 0px;
    padding-left: 0px;
-   padding-top: 10px;
-/*   border-top: 5px solid rgb(240,240,240);*/
+   padding-top: 0px;
 }
 
+.borderFadeOut{
+  border-top: none;
+}
 
 /*///////////////////////////////////////////////////////////
 end of filter list code
@@ -367,6 +342,7 @@ Image grid code
   padding: 0;
   margin-bottom: 1px;
   border: 1.5px solid #ddd;
+  transition: all 0.5s ease-in-out;
 }
 
 .row.no-gutters.gallery {
@@ -379,22 +355,9 @@ Image grid code
    padding-left: 1px;
 }
 
-/*.thumbnail.grid_images{
-  width: 503.219px;
-  height: 284px;
-  min-width: 206.391px;
-  min-height: 215px;
-  padding-top: 2px;
-  padding-bottom: 1px;
-}*/
-
-
 /*///////////////////////////////////////////////////////////
 end of image grid code
 ///////////////////////////////////////////////////////////*/
-
-
-/*end of code for images and icons*/
 
 .jumbotron-top{
 	background-color: rgba(0,0,0,0.15);
@@ -402,12 +365,6 @@ end of image grid code
   padding-bottom: 500px;
   margin-bottom: 0px;
 }
-
-/*.end_page_container{
-  margin-right: 10%;
-  margin-left: 10%;
-  width: 80%;
-}*/
 
 .end_page_container h1{
   font-size: 1.7em;
@@ -478,7 +435,7 @@ end of image grid code
 }
 
 .photoDemo{
-	max-width: 500px;
+	max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 0px 30px 0px;
@@ -490,6 +447,7 @@ end of image grid code
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .btn.btn-default.btn-sm{
 	font-family: Alegreya Sans SC, Helvetica, Arial;
@@ -551,10 +509,14 @@ h4{
   font-family: Varela Round, Helvetica, Arial;
 }
 
-span{
+span.endPgHeader{
   font-style: italic;
   font-size: 0.5em;
   letter-spacing: .2em;
+}
+
+.btn-download-image{
+  transition: all 0.5s ease-in-out;
 }
 
 /*end of code for font/headers/paragraphs*/
@@ -568,33 +530,16 @@ div#horizRule{
 	text-align: center;
 }
 
-/*hover style effects*/
-
-/*.fa-arrow-circle-o-down:hover{
-	color: rgb(120,120,120);
-	cursor: pointer;
-}*/
-
 .arrow-up:hover, .arrow-down:hover, .fa-envelope:hover, .fa-youtube:hover, .fa-instagram:hover, .fa-reddit-alien:hover{
   color: rgb(110,110,110);
   cursor: pointer;
 }
 
-div.grid_type:hover{
-  opacity: 1;
-  transition: opacity .25s ease;
-}
-
-div.grid_title:hover{
-  opacity: 1;
-  transition: opacity .25s ease;
-}
 
 div.thumbnail:hover{
   background-color: #202020;
   opacity: .80;
 }
-
 
 /*end page code bottom of the page*/
 
